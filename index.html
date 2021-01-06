@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+    </head>
+
     <body>
         <p id="message"></p>
         <p id="color-message"></p>
 
         <!-- add image element with default image -->
-        <img id="picture" src="images/morning.jpg" alt="a picture of coffee with 'good morning' written on it"/>
+        <img id="picture" src="assets/images/morning.jpg" alt="a picture of coffee with 'good morning' written on it"/>
 
         <p id="copyright"></p>
 
@@ -21,28 +25,28 @@
                 hour = "It's morning ";
                 document.body.style.backgroundColor = "dodgerblue";
                 document.getElementById("color-message").innerHTML = "The blue background produces blue light, which makes you more alert.<br>You're welcome.";
-                document.getElementById("picture").src = "images/morning.jpg";
+                document.getElementById("picture").src = "assets/images/morning.jpg";
                 document.getElementById("picture").alt = "a picture of coffee with 'good morning' written on it";
             }
             else if(time >= 12 && time < 18) {
                 hour = "It's afternoon ";
                 document.body.style.backgroundColor = "plum";
                 document.getElementById("color-message").innerHTML = "";
-                document.getElementById("picture").src = "images/afternoon.jpg";
+                document.getElementById("picture").src = "assets/images/afternoon.jpg";
                 document.getElementById("picture").alt = "a picture of a field of sunflowers";
             }
             else if(time >= 18 && time < 23) {
                 hour = "It's evening ";
                 document.body.style.backgroundColor = "mediumseagreen";
                 document.getElementById("color-message").innerHTML = "";
-                document.getElementById("picture").src = "images/evening.jpg";
+                document.getElementById("picture").src = "assets/images/evening.jpg";
                 document.getElementById("picture").alt = "a picture of a street lit by streetlamps in the evening";
             }
             else if(time >=24 && time < 5) {
                 hour = "It's night ";
                 document.body.style.backgroundColor = "lightcoral";
                 document.getElementById("color-message").innerHTML = "The reddish background produces red light, which is thought to make it easier to fall asleep.<br>Hope it helps, because you should probably go to bed!";
-                document.getElementById("picture").src = "images/night.jpg";
+                document.getElementById("picture").src = "assets/images/night.jpg";
                 document.getElementById("picture").alt = "a picture of a person asleep";
             }
 
