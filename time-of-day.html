@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="message"></p>
+        <p id="color-message"></p>
+
+        <!-- add image element with default image -->
+        <img src="images/morning.jpg" alt="a picture of coffee with 'good morning' written on it"/>
+
+        <p id="copyright"></p>
+
+        <script>
+            var d = new Date();
+            var time = d.getHours();
+            var day = d.getDay();
+            var year = d.getFullYear();
+            var hour;
+            var weekday;
+
+            if(time >= 5 && time < 12) {
+                hour = "It's morning ";
+                document.body.style.backgroundColor = "dodgerblue";
+                document.getElementById("color-message").innerHTML = "The blue background produces blue light, which makes you more alert.<br>You're welcome.";
+            }
+            else if(time >= 12 && time < 18) {
+                hour = "It's afternoon ";
+                document.body.style.backgroundColor = "plum";
+                document.getElementById("color-message").innerHTML = "";
+            }
+            else if(time >= 18 && time < 23) {
+                hour = "It's evening ";
+                document.body.style.backgroundColor = "mediumseagreen";
+                document.getElementById("color-message").innerHTML = "";
+            }
+            else if(time >=24 && time < 5) {
+                hour = "It's night ";
+                document.body.style.backgroundColor = "lightcoral";
+                document.getElementById("color-message").innerHTML = "The reddish background produces red light, which is thought to make it easier to fall asleep.<br>Hope it helps, because you should probably go to bed!";
+            }
+
+            switch(day) {
+                case 1:
+                    weekday = "on a Monday.";
+                    break;
+                case 2:
+                    weekday = "on a Tuesday.";
+                    break;
+                case 3:
+                    weekday = "on a Wednesday.";
+                    break;
+                case 4:
+                    weekday = "on a Thursday.";
+                    break;
+                case 5:
+                    weekday = "on a Friday.";
+                    break;
+                case 6:
+                    weekday = "on a Saturday.";
+                    break;
+                case 7:
+                    weekday = "on a Sunday.";
+                    break;
+            }
+
+            var message = hour + weekday;
+
+            document.getElementById("message").innerHTML = message;
+
+            document.getElementById("copyright").innerHTML = "© 2020-" + year;
+        </script>
+
+    </body>
+</html>
