@@ -5,14 +5,14 @@
     </head>
 
     <body>
-        <p id="message"><b></b></p>
-        <p id="color-message"><b></b></p>
+        <p id="message"></p>
+        <p id="color-message"></p>
 
         <!-- add image element with default image -->
         <img id="picture" src="" alt=""/>
 
         <div id="footer">
-            <p id="copyright"><b></b></p>
+            <p id="copyright"></p>
         </div>
 
         <script>
@@ -80,7 +80,7 @@
 
             document.getElementById("message").innerHTML = message;
 
-            document.getElementById("copyright").innerHTML = "© 2020-" + year;
+            document.getElementById("copyright").innerHTML = "<b>© 2020-" + year + "</b>";
         </script>
 
     </body>
