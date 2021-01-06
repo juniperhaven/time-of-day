@@ -26,7 +26,7 @@
             if(time >= 5 && time < 12) {
                 hour = "It's morning ";
                 document.body.style.backgroundColor = "dodgerblue";
-                document.getElementById("color-message").innerHTML = "The blue background produces blue light, which makes you more alert.<br>You're welcome.";
+                document.getElementById("color-message").innerHTML = "<b>The blue background produces blue light, which makes you more alert.<br>You're welcome.</b>";
                 document.getElementById("picture").src = "assets/images/morning.jpg";
                 document.getElementById("picture").alt = "a picture of coffee with 'good morning' written on it";
             }
@@ -47,7 +47,7 @@
             else if(time >=24 && time < 5) {
                 hour = "It's night ";
                 document.body.style.backgroundColor = "lightcoral";
-                document.getElementById("color-message").innerHTML = "The reddish background produces red light, which is thought to make it easier to fall asleep.<br>Hope it helps, because you should probably go to bed!";
+                document.getElementById("color-message").innerHTML = "<b>The reddish background produces red light, which is thought to make it easier to fall asleep.<br>Hope it helps, because you should probably go to bed!</b>";
                 document.getElementById("picture").src = "assets/images/night.jpg";
                 document.getElementById("picture").alt = "a picture of a person asleep";
             }
@@ -78,7 +78,7 @@
 
             var message = hour + weekday;
 
-            document.getElementById("message").innerHTML = message;
+            document.getElementById("message").innerHTML = "<b>" + message + "</b>";
 
             document.getElementById("copyright").innerHTML = "<b>© 2020-" + year + "</b>";
         </script>
