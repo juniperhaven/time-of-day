@@ -53,6 +53,9 @@
             }
 
             switch(day) {
+                case 0:
+                    weekday = "on a Sunday.";
+                    break;
                 case 1:
                     weekday = "on a Monday.";
                     break;
@@ -70,9 +73,6 @@
                     break;
                 case 6:
                     weekday = "on a Saturday.";
-                    break;
-                case 7:
-                    weekday = "on a Sunday.";
                     break;
                 default:
                     weekday = "day unknown. There appears to have been an error.";
